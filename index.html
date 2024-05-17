@@ -23,13 +23,13 @@
         <div class="container">
             <div class="row  border border-2 border-light rounded align-items-center gx-2 mt-5 ">
                 <div class="col-sm-12 col-lg-6  my-5 text-center">
-                    <input type="text" class="w-75 p-1 rounded ">
+                    <input type="text" class="w-75 p-1 rounded js-task-input ">
                 </div>
                 <div class="col-sm-12 col-lg-2 my-5 text-center ">
-                    <input type="number" class="w-75 p-1 rounded  " >
+                    <input type="number" class="w-75 p-1 rounded  js-hours" >
                 </div>
                 <div class="col-sm-12 col-lg-4 my-5 text-center " >
-                    <button class="btn btn-primary w-75 " >Add New Task</button>
+                    <button class="btn btn-primary w-75 js-addTaskButton" >Add New Task</button>
                 </div>
             </div>
         </div>
@@ -37,29 +37,13 @@
             <div class="container" >
                 <div class="row  mt-5 ">
                     <div class="col-md-6">
-                         <table class="table table-striped ">
-                                <thead class="table">
+                         <table class="table table-striped js-enter-lists ">
+                                <thead class="table ">
                                     <tr>
                                         <th colspan="4" class="text-center bg-danger"  style="--bs-bg-opacity: 0;">Entry List</th>
                                     </tr>
                                 </thead>
-                                <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                                </tr> 
+                                
                          </table>
                     </div>
                     <div class="col col-md-6 ">
@@ -73,16 +57,35 @@
                                 <td>Hello</td>
                                 <td>my</td>
                                 <td>bad</td>
+                                <td class="text-end"> 
+                                    <span><i class="fa-solid fa-trash text-danger me-4"></i>
+                                    </span> 
+                                    <span ><i class="fa-solid fa-arrow-right text-danger me-2 "></i></span>
+                                </td>
+
                             </tr>
                             <tr>
                                 <td>Hello</td>
                                 <td>my</td>
                                 <td>bad</td>
+                                <td class="text-end"> 
+                                    <span><i class="fa-solid fa-trash text-danger me-4"></i>
+                                    </span> 
+                                    <span ><i class="fa-solid fa-arrow-right text-danger me-2 "></i></span>
+                                </td>
+
                             </tr>
                             <tr>
                                 <td>Hello</td>
                                 <td>my</td>
                                 <td>bad</td>
+                                <td class="text-end"> 
+                                    <span><i class="fa-solid fa-trash text-danger me-4"></i>
+                                    </span> 
+                                    <span ><i class="fa-solid fa-arrow-right text-danger me-2 "></i></span>
+                                </td>
+
+
                             </tr>
                         </table>
                         <div class="bg-light rounded py-2 px-3 mb-1">
@@ -91,8 +94,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class=" col bg-light rounded py-2 px-3 mb-1  mt-1">
-                            You could have saved =40 hours
+                    <div class="js-total-hour col bg-light rounded py-2 px-3 mb-1  mt-1">
                     </div>
                 </div>
             </div>
